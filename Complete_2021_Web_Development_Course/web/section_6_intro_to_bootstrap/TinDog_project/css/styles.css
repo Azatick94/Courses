@@ -1,37 +1,33 @@
 /*General Properties*/
-
 body {
     padding-top: 55px;
+    text-align: center;
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 20%;
 }
 
-h1 {
-    font-family: 'Ubuntu', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat-Bold', sans-serif;
     line-height: 1.5;
-    color: white;
     font-weight: bold;
+    font-size: 3rem;
+}
+
+.white-section {
+    color: white;
+}
+
+.black-section {
+    background-color: #fff;
 }
 
 /* ------------------------ */
-/*Title section styling*/
-#title {
+/* Navbar configuration */
+.navbar {
     background-color: #ff4c68;
 }
-
-.download_btn {
-    margin: 5% 5% 1% 0%;
-}
-
-.title-image {
-    width: 60%;
-    transform: rotate(20deg);
-}
-
-    /* ------------------------ */
-/* Navbar configuration */
 
 .navbar-brand {
     margin-left: 10px;
@@ -51,10 +47,28 @@ h1 {
 }
 
 /* ------------------------ */
-/*Features styling*/
+/*Title section styling*/
+#title {
+    background-color: #ff4c68;
+}
 
+.download_btn {
+    margin: 5% 5% 1% 0;
+}
+
+.title-image {
+    height: 50%;
+    transform: rotate(20deg);
+    position: absolute;
+    right: 30%;
+}
+
+/* ------------------------ */
+/*Features styling*/
 #features {
     margin-top: 10px;
+    position: relative;
+    z-index: 1;
 }
 
 .features_h3 {
@@ -76,4 +90,89 @@ h1 {
 
 .icon-cog:hover {
     color: red;
+}
+
+/* ------------------------ */
+/*Testimonials styling*/
+
+#testimonials {
+    background-color: #ef8172;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+/* ------------------------ */
+/*Press styling*/
+#press {
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-image {
+    width: 14%;
+    margin: 0 2%;
+}
+
+/* ------------------------ */
+/*Pricing styling*/
+
+#pricing {
+    padding: 1%;
+}
+
+.pricing_card {
+    padding: 1%;
+}
+
+/* ------------------------ */
+/*Call For Action styling*/
+#cta {
+    background-color: #ff4c68;
+    padding: 2% 0;
+}
+
+.cta-button {
+    margin: 10px 20px;
+}
+
+.cta-heading {
+    font-family: "Montserrat-Black", serif;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+/* ------------------------ */
+/*Footer styling*/
+#footer {
+    background-color: #fff;
+    padding: 1% 0;
+    color: grey;
+}
+
+.social-fa {
+    margin: 20px 10px;
+}
+
+/* ------------------------ */
+/*Mobile Friendly View */
+@media (max-width: 1030px) {
+
+    .title-image {
+        transform: rotate(0);
+        position: static;
+        width: 40%;
+        right: 0;
+    }
+
+    .col-sm-6 {
+        width: 100%;
+    }
 }
